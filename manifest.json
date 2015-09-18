@@ -1,0 +1,15 @@
+{
+  "name": "Hide Github build files",
+  "description": "Hide build files in the changed files view in a PR on Github",
+  "version": "0.0.2",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/*/pull/**"],
+      "js": ["jquery-1.11.3.min.js", "script.js"]
+    }
+  ],
+  "manifest_version": 2
+}
